@@ -1,0 +1,63 @@
+      A                                      DSPSIZ(24 80 *DS3)      
+      A                                      PRINT                   
+      A                                      CF03(03 'EXÝT')         
+      A                                      CF05(05 'YENÝLE')       
+      A*                                                             
+      A* -- SUBFILE SATIR FORMATI (SFL) --                           
+      A          R SIP01S                    SFL                     
+      A            S01SEL         1A  B  7  2                        
+      A            S01SIP         7A  O  7  6                        
+      A            S01MUS        25A  O  7 15                        
+      A            S01TAR         8Y 0O  7 42EDTWRD('    /  /  ')    
+      A            S01TUT        13Y 2O  7 55EDTCDE(K)               
+      A*                                                             
+      A* -- SUBFILE KONTROL FORMATI (SFLCTL) --                      
+      A          R SIP01C                    SFLCTL(SIP01S)          
+      A                                      SFLSIZ(0011)            
+      A                                      SFLPAG(0010)            
+      A                                      OVERLAY                 
+      A  31                                  SFLDSP                  
+      A  31                                  SFLDSPCTL                 
+      A  32                                  SFLCLR                    
+      A  33                                  SFLEND(*MORE)             
+      A                                  1  2'PROG: SIPR01'            
+      A                                  1 30'SIPARIS PANELI'          
+      A                                      DSPATR(HI)                
+      A                                  3  2'ARAMA (SÝP.NO):'         
+      A            S01POS         7A  B  3 18                          
+      A                                  5  2'SEC'                     
+      A                                      COLOR(TRQ)                
+      A                                  5  6'SÝP.NO'                  
+      A                                      COLOR(TRQ)                
+      A                                  5 15'MUSTERÝ ADÝ'             
+      A                                      COLOR(TRQ)                
+      A                                  5 42'TARÝH'                   
+      A                                      COLOR(TRQ)                
+      A                                  5 55'TUTAR'                   
+      A                                      COLOR(TRQ)                
+      A*                                                               
+      A* -- ALT BILGI FORMATI (AYRI KAYIT) --                          
+      A          R FOOTER                                                      
+      A                                      OVERLAY                           
+      A                                 23  2'F3=CÝKÝS  F5=YENÝLE  5=DETAY GOR'
+      A                                      COLOR(BLU)                        
+      A*                                                                       
+      A* -- DETAY PENCERESI (WINDOW) --                                        
+      A          R DETREC                                                      
+      A                                      WINDOW(6 10 10 55)                
+      A                                      OVERLAY                           
+      A                                  1 12'SIPARIS DETAYLARI'               
+      A                                      DSPATR(HI)                        
+      A                                  3  2'SÝPARÝS NO:'                     
+      A            W01SIP         7A  O  3 15                                  
+      A                                  5  2'URUN KODU'                       
+      A                                  5 20'MÝKTAR'                          
+      A                                  5 35'FÝYAT'                           
+      A            W01UR1        15A  O  6  2                                  
+      A            W01MK1        11Y 2O  6 20                                  
+      A            W01FY1        11Y 2O  6 35                                  
+      A            W01UR2        15A  O  7  2                                  
+      A            W01MK2        11Y 2O  7 20                   
+      A            W01FY2        11Y 2O  7 35                   
+      A                                  9  2'ENTER=KAPAT'      
+      A                                      COLOR(BLU)         

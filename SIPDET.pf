@@ -1,0 +1,9 @@
+                                                UNIQUE             
+     A               R SIPDETR                                      
+     A                 SDSIPNO        7A         TEXT('SIPARIS NO') 
+     A                 SDSATIR        3S 0       TEXT('SITIR NO')   
+     A                 SDURUN        15A         TEXT('URUN KODU')  
+     A                 SDMIKTAR      11S 2       TEXT('MIKTAR')     
+     A                 SDFIYAT       11S 2       TEXT('BIRIM FIYAT')
+     A               K SDSIPNO                                      
+     A               K SDSATIR                                      

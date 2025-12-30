@@ -1,0 +1,8 @@
+                                                UNIQUE                
+     A               R SIPHDRR                                         
+     A                 SHSIPNO        7A         TEXT('SIPARIS NO')    
+     A                 SHMUSTERI     40A         TEXT('MUSTERI ADI')   
+     A                 SHTARIH        8S 0       TEXT('SIPARIS TARIHI')
+     A                 SHTUTAR       13S 2       TEXT('TOPLAM TUTAR')  
+     A                 SHDURUM        1A         TEXT('DURUM')         
+     A               K SHSIPNO                                         
