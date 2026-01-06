@@ -5,9 +5,9 @@
      *                                                              
      D SFLRRN          S              4  0                           
      *                                                              
-     C     *ENTRY        PLIST                                       
+     C     *ENTRY        PLIST                                 
      C                   PARM                    pCOCONO           6
-     *                                                             
+     *                                                            
      * --- ANA PROGRAM BASLANGICI ---                               
      C                   EXSR      LDSFL                             
      *                                                              
@@ -132,4 +132,5 @@
      C  N98              EVAL      W01FY1 = SDFIYAT                         
      C                   EXFMT     DETREC                                   
      C                   ENDSR                                               
+
 
