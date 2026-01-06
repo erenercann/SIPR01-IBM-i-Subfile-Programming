@@ -15,7 +15,7 @@
      C                   WRITE     FOOTER                     
      C                   EXFMT     SIP01C    
      *                                                              
-     C                   SELECT                                      
+     C                   SELECT   
      C                   WHEN      *IN03 = *ON                       
      C                   LEAVE                                            
      *                                                                   
@@ -132,6 +132,7 @@
      C  N98              EVAL      W01FY1 = SDFIYAT                         
      C                   EXFMT     DETREC                                   
      C                   ENDSR                                               
+
 
 
 
