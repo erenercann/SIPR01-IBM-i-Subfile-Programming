@@ -9,7 +9,7 @@
      C                   PARM                    pCOCONO           6
      *                                                            
      * --- ANA PROGRAM BASLANGICI ---                               
-     C                   EXSR      LDSFL                             
+     C                   EXSR      LDSFL              
      *                                                              
      C                   DOU       *IN03 = *ON                       
      C                   WRITE     FOOTER                            
@@ -132,6 +132,7 @@
      C  N98              EVAL      W01FY1 = SDFIYAT                         
      C                   EXFMT     DETREC                                   
      C                   ENDSR                                               
+
 
 
 
