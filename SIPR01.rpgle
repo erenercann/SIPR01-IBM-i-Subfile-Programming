@@ -12,8 +12,8 @@
      C                   EXSR      LDSFL              
      *                                                              
      C                   DOU       *IN03 = *ON                       
-     C                   WRITE     FOOTER                            
-     C                   EXFMT     SIP01C                            
+     C                   WRITE     FOOTER                     
+     C                   EXFMT     SIP01C    
      *                                                              
      C                   SELECT                                      
      C                   WHEN      *IN03 = *ON                       
@@ -132,6 +132,7 @@
      C  N98              EVAL      W01FY1 = SDFIYAT                         
      C                   EXFMT     DETREC                                   
      C                   ENDSR                                               
+
 
 
 
