@@ -131,10 +131,4 @@
      C  N98              EVAL      W01MK1 = SDMIKTAR                        
      C  N98              EVAL      W01FY1 = SDFIYAT                         
      C                   EXFMT     DETREC                                   
-     C                   ENDSR                                               
-
-
-
-
-
-
+     C                   ENDSR
